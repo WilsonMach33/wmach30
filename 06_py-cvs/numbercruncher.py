@@ -1,5 +1,7 @@
 """
 Eric Sohel and William Mach
+
+QSS: "hello"
 """
 
 import random 
