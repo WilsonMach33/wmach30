@@ -1,10 +1,9 @@
-"""
-Dual Ducks: Donald Bi, Brian/Paul Yang, Faiyaz Rafee
-SoftDev
-K11 -- Flask/html forms
-2022-10-14
-time spent: .5 hrs
-"""
+# Rice Explosion: Donald Bi, Wilson Mach, Nakib Abedin
+# SoftDev
+# K11 -- Flask/html forms
+# 2022-10-14
+# time spent: .5 hrs
+
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
@@ -19,7 +18,7 @@ app = Flask(__name__)    #create Flask object
 trioTASK:
 ~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
 ...read for understanding all of the code below.
-Some will work as written; other sections will not. 
+Some will work as written; other sections will not.
 TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
@@ -63,8 +62,8 @@ def authenticate():
     return render_template( 'response.html' )  #response to a form submission
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
