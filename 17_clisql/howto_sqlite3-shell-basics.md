@@ -18,7 +18,7 @@ To access specific info from specific column: `SELECT <field_name> FROM <tbl_nam
 # Commands
 To leave the sqlite shell: .quit
 
-# EXAMPLE CODE
+# Example code
 ```
 sqlite3
 
