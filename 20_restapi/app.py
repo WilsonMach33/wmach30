@@ -8,9 +8,9 @@ time spent: 0.8 hours
 DISCO:
 1. You can use the requests library to make HTTP requests
 2. APIs are a good source of data
-3. JSON can be used like a dictionary  
+3. JSON can be used like a dictionary
 
-QCC: 
+QCC:
 1. How can we make our own APIs?
 '''
 
@@ -31,5 +31,5 @@ def display():
     return render_template('main.html', img = imgurl, text = explanation)
 
 if __name__ == "__main__":
-    app.debug = True 
+    app.debug = True
     app.run()

@@ -21,12 +21,12 @@ def home():
         print(session['username'])
         return render_template('response.html', username = session['username'])
     return render_template('login.html') #for rendering login page intially
-        
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST': #for login form submission
-        username = request.form['username']   
+        username = request.form['username']
         password = request.form['password']
 
         if username == correct_username: #checks for correct username
