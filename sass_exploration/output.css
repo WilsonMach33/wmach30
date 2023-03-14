@@ -1,0 +1,12 @@
+.font {
+  stack: Helvetica;
+  size: 100px;
+}
+
+.heading {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+/*# sourceMappingURL=output.css.map */

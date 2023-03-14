@@ -1,0 +1,18 @@
+.font {
+  stack: Helvetica;
+  size: 100px;
+}
+
+// $font-stack: Helvetica;
+// $font-size: 100px;
+$primary-color: rgb(255, 0, 0);
+
+.heading {
+  // font: 100% $font-stack;
+  // font-size: $font-size;
+
+  color: $primary-color;
+
+  font-weight: bold;  
+  text-align: center;
+}
