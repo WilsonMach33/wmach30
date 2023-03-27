@@ -1,0 +1,68 @@
+@use 'button';
+
+$font-stack: "Times New Roman", "Arial Black";
+$font-size: 50px;
+$background-color: rgb(252, 41, 71);
+$text-color1: black;
+$text-color2: white;
+$position: absolute;
+$margin: 10px;
+
+headline {
+    background-color: $background-color;
+    position: $position;
+    width: 100%;
+}
+
+.text{
+    font-family: $font-stack;
+    font-size: $font-size;
+    font-weight: bold;  
+    color: $text-color2;
+
+    margin-left: 20px;
+}
+
+.home-button{
+    @include button.theme($top: 12%, $left: 93%);
+}
+
+.signup-button{
+    @include button.theme($top: auto, $left: 0);
+}
+
+.signup-container{
+    border-radius: 25px;
+  
+    position: $position;
+
+    width: 25%;
+    height: 66%;
+
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color:rgb(252, 41, 71)
+}
+
+.signup-input{
+    width: 85%;
+    margin: 20px;
+}
+
+.signup-text{
+    margin-left: 20px;
+}
+
+.signup-heading{
+    font-size: $font-size*0.75;
+    font-family: $font-stack;
+    color: $text-color2;
+    font-weight: bold;
+
+    position: $position;
+    top: 10%;
+    left: 33%;
+    transform: translate(-10%, -50%);
+}

@@ -1,0 +1,66 @@
+.home-button, .signup-button {
+  position: absolute;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 8px;
+}
+
+headline {
+  background-color: rgb(252, 41, 71);
+  position: absolute;
+  width: 100%;
+}
+
+.text {
+  font-family: "Times New Roman", "Arial Black";
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+}
+
+.home-button {
+  top: 12%;
+  left: 93%;
+  font-weight: bold;
+}
+
+.signup-button {
+  top: auto;
+  left: 0;
+  font-weight: bold;
+}
+
+.signup-container {
+  border-radius: 25px;
+  position: absolute;
+  width: 25%;
+  height: 66%;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(252, 41, 71);
+}
+
+.signup-input {
+  width: 85%;
+  margin: 20px;
+}
+
+.signup-text {
+  margin-left: 20px;
+}
+
+.signup-heading {
+  font-size: 37.5px;
+  font-family: "Times New Roman", "Arial Black";
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  transform: translate(-10%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */
