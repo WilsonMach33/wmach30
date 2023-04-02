@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/css/OnePager.css">
+    </head>
+
+    <body class="background">  
+        <div class="heading">
+            <div class="big-title"> Guide to Basic SASS using SCSS </div>
+            
+            <div class = "heading2">
+                <div class="text">
+                    Sass is a professional grade CSS extension language. It saves you 
+                    time while writing CSS code by keeping it DRY and allows you to keep your 
+                    code consistent in your file(s). <b>All valid CSS code is valid SCSS code</b>.
+                </div>
+            </div>
+        </div>
+
+        <div class="installing-box">
+            <div class="section-title"> Install: </div>
+            <ol>
+                <li>
+                    <div class="text"> Download the Github Package that fits your operating system: </div>
+                    <ol type="a">
+                        <li>
+                            <div class="link"> <a href="https://github.com/sass/dart-sass/releases/tag/1.60.0" target="_blank"> Github Site </a></div>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <div class="text"> Add package to PATH </div>
+                    <ol type="a">
+                        <li><div class="link"> <a href="https://katiek2.github.io/path-doc/" target="_blank"> Instructions </a></div></li>
+                    </ol>
+                </li>
+
+                <li>
+                    <div class="text"> Test using command: <b> "sass - - help" </b></div>
+                </li>
+
+                <li>
+                    <div class="text"> Go wild! </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="using-box">
+            <div class="section-title"> Using SASS: </div>
+            <ol>
+                <li>
+                    <div class="text"> Write scss code in a .scss file </div>
+                </li>
+                <li>
+                    <div class="text"> Convert SCSS to CSS </div>
+                    <ol type="a">
+                        <li>
+                            <div class="text">
+                                Type the following into your shell: <b>sass --watch {file name}.scss {file name}.css</b>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="text">
+                                This will create/place your scss code into a .css file. 
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <div class="text">
+                        Add the CSS file into your HTML files like usual and use.
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="features-box">
+            <div class="section-title"> Useful Features: </div>
+            
+            <div class="variables-box">
+                <div class="small-section-title"> 1. Variables: </div>
+                <ol type="I">
+                    <li>
+                        <div class="text"> Replace commonly used style definitions </div>
+                    </li>
+                    <li>
+                        <div class="text"> Use variables as you would in Java/Python </div>
+                    </li>
+                    <li>
+                        <div class="text"> Syntax </div>
+                        <ol type="a">
+                            <li>
+                                <div class="text"> Creation: ${variable name}: {value}; </div>
+                            </li>
+                            <li>
+                                <div class="text"> Usage: {style}: ${variable name}; </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="extension-box">
+                <div class="small-section-title"> 2. Extensions/Inheritance: </div>
+                <ol type="I">
+                    <li>
+                        <div class="text"> Easily add code from one block to another! </div>
+                    </li>
+                    <li>
+                        <div class="text"> Use as an extension with variable inputs </div>
+                    </li>
+                    <li>
+                        <div class="text"> Syntax </div>
+                        <ol type="a">
+                            <li>
+                                <div class="text"> Creation:@{mix in} (${variable name}: {placeholder}, …} {{code}}  </div>
+                            </li>
+                            <li>
+                                <div class="text"> @include {mixin name} (${variables} = {value}, …)
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mixins-box">
+                <div class="small-section-title"> 3. Mixins: </div>
+                <ol type="I">
+                    <li>
+                        <div class="text"> Basically functions with variable inputs </div>
+                    </li>
+                    <li>
+                        <div class="text"> One possible use is as templates (buttons, containers, etc.) </div>
+                    </li>
+                    <li>
+                        <div class="text"> Syntax </div>
+                        <ol type="a">
+                            <li>
+                                <div class="text"> Creation: %{extension name) {{code}} </div>
+                            </li>
+                            <li>
+                                <div class="text"> Usage: @extend {extension name}; </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <br>
+            </div>
+        </div>
+
+        <div class="websites-box">
+            <div class="small-section-title"> Helpful Websites: </div>
+                <ol type="I">
+                    <li>
+                        <div class="text"> Installation instructions: <a href="https://sass-lang.com/install" target="_blank" class="link"> https://sass-lang.com/install </a> </div>
+                    </li>
+                    <li>
+                        <div class="text"> Introduction to SASS: <a href="https://sass-lang.com/guide" target="_blank" class="link"> https://sass-lang.com/guide </a> </div>
+                    </li>
+                    <li>
+                        <div class="text"> Documentation: <a href="https://sass-lang.com/documentation/" target="_blank" class="link"> https://sass-lang.com/documentation/ </a> </div>
+                    </li>
+                    <li>
+                        <div class="text"> My slides: <a href="https://bit.ly/3U1AWcw" target="_blank" class="link"> https://bit.ly/3U1AWcw </a> </div>
+                    </li>
+                </ol>
+        </div>
+
+        <div class="contact-box">
+            <div class="small-section-title"> Contact: </div>
+                <ol type="I">
+                    <li>
+                        <div class="text"> Author Name: Wilson Mach </div>
+                    </li>
+                    <li>
+                        <div class="text"> Period: 2 </div>
+                    </li>
+                    <li>
+                        <div class="text"> Email: wmach30@stuy.edu </div>
+                    </li>
+                </ol>
+
+                <br>
+        </div>
+    </body>
+</html>

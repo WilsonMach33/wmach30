@@ -1,0 +1,169 @@
+@use "sass:math";
+
+$padding: 10px;
+$border-radius: 20px;
+
+$background-color1: rgb(178,164,255);
+$background-color2: rgb(255, 180, 180);
+$background-color3: rgb(255, 222, 180);
+$background-color4: rgb(253, 247, 195);
+
+//background
+.background{
+    background-color: $background-color1;
+}
+
+//top box
+.heading{
+    position: absolute;
+    top: $padding;
+    left: $padding;
+    right: $padding;
+
+    width: 98%;
+    height: 13%;
+    background-color: $background-color2;
+    border-radius: $border-radius;
+}
+
+.heading2{
+    padding-top: 10px;
+    padding-left: $padding;
+    padding-right: $padding;
+    padding-bottom: 10px;
+    font-size: 18px;
+
+    border-radius: $border-radius;
+}
+
+//text box
+%text-box{
+    padding-top: $padding;
+    padding-left: $padding;
+    padding-right: $padding*1.5;
+    padding-bottom: 0px;
+    font-size: 18px;
+
+    border-radius: $border-radius;
+}
+
+.installing-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 17%;
+    left: 10px;
+    
+    width: 20%;
+    background-color: $background-color3;
+}
+
+.using-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 53%;
+    left: 10px;
+    
+    width: 20%;
+    background-color: $background-color3;
+}
+
+.features-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 17%;
+    left: 24%;
+
+    width: 72.5%;
+    height: 47%;
+    background-color: $background-color3;
+}
+
+.variables-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 13%;
+    left: 3%;
+
+    width: 28%;
+    background-color: $background-color4;
+}
+
+.extension-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 13%;
+    left: 35%;
+
+    width: 28%;
+    background-color: $background-color4;
+}
+
+.mixins-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 13%;
+    left: 67%;
+
+    width: 28%;
+    background-color: $background-color4;
+}
+
+.websites-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 68%;
+    left: 24%;
+
+    width: 40%;
+    height: 22%;
+    background-color: $background-color3;
+}
+
+.contact-box{
+    @extend %text-box;
+
+    position: absolute;
+    top: 68%;
+    left: 67%;
+
+    width: 29.5%;
+    height: 22%;
+    background-color: $background-color3;
+}
+
+// fonts
+@mixin title ($font-size: 10px, $color: red){
+    font-size: $font-size;
+    font-weight: bold;
+    color: $color;
+}
+
+.big-title{
+    text-align: center;
+    padding-top: 9px;
+    @include title($font-size: 25px, $color: blue);
+}
+
+.section-title{
+    @include title($font-size: 20px, $color: blue);
+}
+
+.small-section-title{
+    @include title($font-size: 18px, $color: blue);
+}
+
+.text{
+    font-size: 15px;
+}
+
+.link{
+    font-size: 15px;
+    font-weight: bold;
+}

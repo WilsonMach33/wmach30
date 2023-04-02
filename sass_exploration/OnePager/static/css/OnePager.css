@@ -1,0 +1,130 @@
+.background {
+  background-color: rgb(178, 164, 255);
+}
+
+.heading {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  width: 98%;
+  height: 13%;
+  background-color: rgb(255, 180, 180);
+  border-radius: 20px;
+}
+
+.heading2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.contact-box, .websites-box, .mixins-box, .extension-box, .variables-box, .features-box, .using-box, .installing-box {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.installing-box {
+  position: absolute;
+  top: 17%;
+  left: 10px;
+  width: 20%;
+  background-color: rgb(255, 222, 180);
+}
+
+.using-box {
+  position: absolute;
+  top: 53%;
+  left: 10px;
+  width: 20%;
+  background-color: rgb(255, 222, 180);
+}
+
+.features-box {
+  position: absolute;
+  top: 17%;
+  left: 24%;
+  width: 72.5%;
+  height: 47%;
+  background-color: rgb(255, 222, 180);
+}
+
+.variables-box {
+  position: absolute;
+  top: 13%;
+  left: 3%;
+  width: 28%;
+  background-color: rgb(253, 247, 195);
+}
+
+.extension-box {
+  position: absolute;
+  top: 13%;
+  left: 35%;
+  width: 28%;
+  background-color: rgb(253, 247, 195);
+}
+
+.mixins-box {
+  position: absolute;
+  top: 13%;
+  left: 67%;
+  width: 28%;
+  background-color: rgb(253, 247, 195);
+}
+
+.websites-box {
+  position: absolute;
+  top: 68%;
+  left: 24%;
+  width: 40%;
+  height: 22%;
+  background-color: rgb(255, 222, 180);
+}
+
+.contact-box {
+  position: absolute;
+  top: 68%;
+  left: 67%;
+  width: 29.5%;
+  height: 22%;
+  background-color: rgb(255, 222, 180);
+}
+
+.big-title {
+  text-align: center;
+  padding-top: 9px;
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+.small-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=OnePager.css.map */
