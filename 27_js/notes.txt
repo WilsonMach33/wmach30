@@ -1,0 +1,16 @@
+Team Wandering Majestic Merciful Mice:: Maya Mori, Wilson Mach
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2023-04-03
+
+DISCO
+-----------------------------------------------------------------
+* JavaScript is somewhat similar to Java (like the semicolons, {})
+* To use functions in Scheme, the syntax is (function parameter parameter ...)
+* operations go first in Scheme.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How is JavaScript more similar to Scheme compared to Java?
+=================================================================

@@ -24,7 +24,7 @@ headline {
 }
 
 .home-button{
-    @include button.theme($top: 12%, $left: 93%);
+    @include theme($top: 12%, $left: 93%);
 }
 
 .signup-button{
@@ -66,3 +66,4 @@ headline {
     left: 33%;
     transform: translate(-10%, -50%);
 }
+
