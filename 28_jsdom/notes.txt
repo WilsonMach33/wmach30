@@ -1,15 +1,13 @@
-Team Wandering Majestic Merciful Mice:: Maya M, Wilson
+Team Wilson
 SoftDev pd2
-K28 -- Getting more comfortable with the dev console and the DOM
-2023-04-05w
+K29
+2023-04-024w
 
 
-DISCO
-* single and double quotes in JS
-* console.log() to print stuff
-* similar for loop to Java
-* document.write to write in the HTML file from JS
+DISCO:
+1. <script src="<file name>.js"></script> has to be at the end of the html file to work properly
+
+
+
 
 QCC:
-* What is classList in the red function?
-* Which color does HTML prioritize when there are multiple classes?
