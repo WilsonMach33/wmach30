@@ -5,11 +5,10 @@ K28 -- Getting more comfortable with the dev console and the DOM
 
 
 DISCO
-* single and double quotes in JS
-* console.log() to print stuff
-* similar for loop to Java
-* document.write to write in the HTML file from JS
+1. edit html of object by using innerHTML
+2. body.appendChild(newP) adds data to existing element
+3. buttonFact.addEventListener('click', writeFact) listens to specific requests and
+activate function
 
 QCC:
-* What is classList in the red function?
-* Which color does HTML prioritize when there are multiple classes?
+1. Is it possible to add an object without putting it inside a parent container?
