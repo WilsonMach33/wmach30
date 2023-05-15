@@ -71,9 +71,16 @@ def model_all_sql():
 
 def name():
     c = db.cursor()
-    c.execute('select title from songs')
+    c.execute('select title from songs limit 10')
     name = c.fetchall()
     c.close()
     return name
+
+def popularity():
+    c = db.cursor()
+    c.execute('select popularity from songs limit 10')
+    popularity = c.fetchall()
+    c.close()
+    return popularity
 
 print(name())
