@@ -1,17 +1,15 @@
-// Set the dimensions of the SVG element and the margins of the chart
+// set chart dimensions
 var width = 1000,
     height = 500,
     margin = { top: 20, right: 20, bottom: 300, left: 50 };
 
-// Define the song data
+// set up song data
 const songdata=[];
 
 for(let i=0; i<songs.length/2;i++){
     const a = {title: songs[i], popp: songs[songs.length/2+i]};
     songdata.push(a);
 }
-
-console.log(songdata);
 
 // Create the SVG element and append a group element to hold the chart
 var svg = d3.select("#chart")
