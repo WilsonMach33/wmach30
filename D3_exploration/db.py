@@ -82,5 +82,3 @@ def popularity():
     popularity = c.fetchall()
     c.close()
     return popularity
-
-print(name())
