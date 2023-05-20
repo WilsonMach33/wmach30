@@ -82,3 +82,23 @@ def popularity():
     popularity = c.fetchall()
     c.close()
     return popularity
+
+def get_column(column):
+    c = db.cursor()
+    c.execute('select ' + column + ' from songs limit 10')
+    data = c.fetchall()
+    c.close()
+    return data
+
+print(get_column('title'))
+
+
+# prints average value of selected albums
+# def get_average(album):
+#     c = db.cursor()
+#     c.execute("select avg(popularity) FROM songs WHERE album = Lover GROUP BY album")
+#     result = c.fetchall()
+#     c.close()
+#     return result
+
+# print(get_average("Lover"))

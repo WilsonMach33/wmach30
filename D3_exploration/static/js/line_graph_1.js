@@ -11,11 +11,12 @@ for(let i=0; i<songs.length/2;i++){
     songdata.push(a);
 }
 
+//function
 function LineChart(data){
   // Create the SVG element and append a group element to hold the chart
   var svg = d3.select("#chart")
-  .attr("width", width)
-  .attr("height", height);
+    .attr("width", width)
+    .attr("height", height);
 
   var chart = svg.append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -80,6 +81,6 @@ function LineChart(data){
   .datum(data)
   .attr("class", "line")
   .attr("d", line);
-  }
+}
 
 LineChart(songdata);
