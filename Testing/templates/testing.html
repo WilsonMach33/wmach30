@@ -2,16 +2,13 @@
 <html>
     <head>
         <style>
-            DIV.table 
-            {
+            .DIV.table {
                 display:table;
             }
-            FORM.tr, DIV.tr
-            {
+            .FORM.tr, DIV.tr {
                 display:table-row;
             }
-            SPAN.td
-            {
+           .SPAN.td {
                 display:table-cell;
             }
          </style>
@@ -19,23 +16,20 @@
     
     <body>
         <div class="table">
-            <form class="tr" method="post" action="testing.html">
+            <form class="tr" method="post">
                 <span class="td">
-                  <input type="text" name="username" placeholder="Username" required>
+                  <input type="text" name="username" value="{{data[username]}}">
                 </q></span>
                 <span class="td">
-                  <input type="text" name="password" placeholder="Password" required>
+                  <input type="text" name="password" required>
                 </span>
                 
                 <input id = "submit" type="submit" name="sub1" value="Submit">
             </form>
         </div>
 
-        {{data}}
-            
-        <!-- <div class="tr">
-        <span class="td">(cell data)</span>
-        <span class="td">(cell data)</span>
-        </div> -->
+        {% for value in data %}
+        <tr><td>{{data[value]}}</td></tr>
+        {% endfor %}    
     </body>
 </html>
