@@ -1,18 +1,15 @@
-from flask import Flask, session, render_template, request, redirect, url_for
-import sqlite3
-import csv
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"])
-def register_page():
-    if( request.method == "GET"): # display page
-        return render_template("testing.html")
-    
-    a = request.form
-    return render_template("testing.html", data = a)
+@app.route('/')
+def index():
+    return render_template('testing.html')
 
+@app.route('/process_form', methods=['POST'])
+def process_form():
+    checked_values = request.form.getlist('checkboxes')
+    return ', '.join(checked_values)
 
-if __name__ == "__main__":
-    app.debug = True
+if __name__ == '__main__':
     app.run()

@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .DIV.table {
-                display:table;
-            }
-            .FORM.tr, DIV.tr {
-                display:table-row;
-            }
-           .SPAN.td {
-                display:table-cell;
-            }
-         </style>
-    </head>
-    
-    <body>
-        <div class="table">
-            <form class="tr" method="post">
-                <span class="td">
-                  <input type="text" name="username" value="{{data[username]}}">
-                </q></span>
-                <span class="td">
-                  <input type="text" name="password" required>
-                </span>
-                
-                <input id = "submit" type="submit" name="sub1" value="Submit">
-            </form>
-        </div>
-
-        {% for value in data %}
-        <tr><td>{{data[value]}}</td></tr>
-        {% endfor %}    
-    </body>
+<head>
+  <title>Checkbox Example</title>
+</head>
+<body>
+  <form action="/process_form" method="POST">
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" name="checkboxes" value="option1"> Option 1
+    </label><br>
+    <label for="checkbox2">
+      <input type="checkbox" id="checkbox2" name="checkboxes" value="option2"> Option 2
+    </label><br>
+    <label for="checkbox3">
+      <input type="checkbox" id="checkbox3" name="checkboxes" value="option3"> Option 3
+    </label><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
 </html>
